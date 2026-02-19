@@ -1,0 +1,139 @@
+:root {
+  --gradient-color: linear-gradient(
+    460deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  --color: #eeaeca;
+  --color2: #94bbe9;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body{
+  /* background-color:  rgba(0, 0, 0, 0.911); */
+}
+
+.navbar {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.911);
+}
+
+.nav-link {
+  font-size: 21px;
+  color: rgba(255, 255, 255, 0.829);
+}
+
+.navbar-brand {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-link:hover {
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.carousel-item {
+  height: 92vh; /* Parent ko height do */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-about {
+  height: 70vh;
+  width: 30vw;
+  border: 16px solid #94bbe9;
+  border-radius: 90px;
+}
+
+.image-about:hover{
+  transform: scale(1.1);
+  box-shadow: 0 10px 30px var(--color);
+  /* opacity: 0.5; */
+}
+/* .container{
+    border: 1px solid black;
+} */
+
+.gallery-image:hover{
+  transform: scale(1);
+  box-shadow: 0 10px 30px var(--color2);
+  /* opacity: 0.7; */
+}
+
+.about-btn {
+  border: 1px solid #94bbe9;
+  color: #94bbe9;
+}
+
+.about-btn:hover {
+  background: var(--gradient-color);
+  color: white;
+  border: none;
+  box-shadow: 0 8px 20px #94bbe9;
+  transform: translateY(-6px);
+}
+
+.image-service:hover{
+  transform: translateY(-12px) scale(1.1);
+  box-shadow:
+    #eeaeca 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.photo {
+  color: #94bbe9;
+}
+
+.read {
+  color: #94bbe9;
+}
+
+.read:hover {
+  color: #eeaeca;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card:hover{
+  transform: translateY(-12px) scale(1.1);
+  box-shadow:
+    #94bbe9 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card img {
+  object-fit: fill;
+  border-radius: 5px;
+}
+
+.contact-form:hover {
+  z-index: 1;
+  box-shadow: 0 10px 30px var(--color);
+}
+
+.detail-contact:hover {
+ z-index: 1;
+  box-shadow: 0 10px 30px var(--color2);
+}
+
+/* .footer {
+  color: var(--color);
+} */
